@@ -12,7 +12,7 @@ import org.formation.entity.*;
 //import org.formation.entity.Client;
 
 @Produces({"application/xml","application/json" })
-public interface ProxiBanqueRest {
+public interface ProxiBanqueRest { 
 
 	@GET
 	@Path("/clients/{idClient}")

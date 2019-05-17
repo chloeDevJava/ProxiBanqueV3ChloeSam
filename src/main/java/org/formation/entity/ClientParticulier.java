@@ -15,9 +15,8 @@ public class ClientParticulier extends Client {
 		super();
 	}
 	
-	public ClientParticulier(String nomClient, String prenomClient, String emailClient, Adresse adresseClient,
-			CompteCourant compteCourant, CompteEpargne compteEpargne) {
-		super(nomClient, prenomClient, emailClient, adresseClient, compteCourant, compteEpargne);
+	public ClientParticulier(String nomClient, String prenomClient, String emailClient, Adresse adresseClient) {
+		super(nomClient, prenomClient, emailClient, adresseClient);
 	}
 
 }

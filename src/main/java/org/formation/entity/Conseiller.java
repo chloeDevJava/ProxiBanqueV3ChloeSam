@@ -17,7 +17,6 @@ public class Conseiller implements Audit {
 
 	// Attributs
 	
-	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long idConseiller;
@@ -40,7 +39,6 @@ public class Conseiller implements Audit {
 		this.prenomConseiller = prenomConseiller;
 		this.emailConseiller = emailConseiller;
 	}
-
 
 	// Getters & Setters
 	
@@ -68,7 +66,6 @@ public class Conseiller implements Audit {
 		this.emailConseiller = emailConseiller;
 	}
 	
-	
 
 	// Méthodes
 
@@ -83,6 +80,5 @@ public class Conseiller implements Audit {
 				+ prenomConseiller + ", emailConseiller=" + emailConseiller + "]";
 	}
 	
-
 	
 }

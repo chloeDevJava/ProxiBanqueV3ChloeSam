@@ -24,7 +24,6 @@ public class RestImplementation implements ProxiBanqueRest {
 		Client client = new Client("Spinnato", "Chloé", "chloe@mail.com");
 		client.setIdClient(123L);
 		clients.put(client.getIdClient(), client);
-
 	}
 
 //	@Override

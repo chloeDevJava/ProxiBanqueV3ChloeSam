@@ -19,9 +19,8 @@ public class ClientEntreprise extends Client {
 		super();
 	}
 	
-	public ClientEntreprise(String nomClient, String prenomClient, String emailClient, Adresse adresseClient,
-			CompteCourant compteCourant, CompteEpargne compteEpargne, String raisonSociale) {
-		super(nomClient, prenomClient, emailClient, adresseClient, compteCourant, compteEpargne);
+	public ClientEntreprise(String nomClient, String prenomClient, String emailClient, Adresse adresseClient, String raisonSociale) {
+		super(nomClient, prenomClient, emailClient, adresseClient);
 		this.raisonSociale = raisonSociale;
 	}
 

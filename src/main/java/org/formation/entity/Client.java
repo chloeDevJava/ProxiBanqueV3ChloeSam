@@ -40,8 +40,9 @@ public class Client {
 	@JoinColumn(name = "adresse_id", unique = true)
 	private Adresse adresseClient;
 	
-	private CompteCourant compteCourant;
-	private CompteEpargne compteEpargne;
+	// ATTENTION PAS FORCEMENT NECESSAIRE
+//	private CompteCourant compteCourant;
+//	private CompteEpargne compteEpargne;
 	
 	@OneToMany(mappedBy = "client", fetch = FetchType.LAZY)
 	protected List<Compte> listComptes = new ArrayList<Compte>();
@@ -56,15 +57,12 @@ public class Client {
 	
 	//Constructeur
 	
-	public Client(String nomClient, String prenomClient, String emailClient, Adresse adresseClient,
-			CompteCourant compteCourant, CompteEpargne compteEpargne) {
+	public Client(String nomClient, String prenomClient, String emailClient, Adresse adresseClient) {
 		super();
 		this.nomClient = nomClient;
 		this.prenomClient = prenomClient;
 		this.emailClient = emailClient;
 		this.adresseClient = adresseClient;
-		this.compteCourant = compteCourant;
-		this.compteEpargne = compteEpargne;
 	}
 
 	public Client(String nomClient, String prenomClient, String emailClient) {
@@ -102,7 +100,15 @@ public class Client {
 	public void setEmailClient(String emailClient) {
 		this.emailClient = emailClient;
 	}
-
+	
+	public Adresse getAdresseClient() {
+		return adresseClient;
+	}
+	
+	public void setAdresseClient(Adresse adresseClient) {
+		this.adresseClient = adresseClient;
+	}
+	
 	
 	// Méthodes
 
